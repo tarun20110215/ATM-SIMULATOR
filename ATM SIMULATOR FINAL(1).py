@@ -31,8 +31,6 @@ def CheckPIN():
         pin_ = int(f.readline())                                                # accessing the pre-stored PIN
         if int(pin.get()) != pin_:                                              # comparing the pre-stored and user provided PIN
             Label(root2, text="WRONG PIN!", fg="red").pack()
-            Button(root2, text="RE-ENTER", command=CheckPIN).pack()
-            Button(root2, text="EXIT", command=Exit).pack()
         else:
             DisplayOptions()
     
